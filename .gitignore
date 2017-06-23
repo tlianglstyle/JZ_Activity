@@ -1,0 +1,4 @@
+.deploy_git/
+node_modules/
+.git
+.svn

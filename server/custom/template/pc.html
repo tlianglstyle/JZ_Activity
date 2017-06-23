@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>[node-build-activity-title]</title>
+	<%- css('index.css') %>
+    <script type="text/javascript">
+        var title="[node-build-activity-title]";
+        var activity="<%= activity %>";
+	</script>
+</head>
+<body>
+<div id="content">
+    <div class="activity-modules">
+        [node-build-activity-modules-placeholder]
+	</div>
+    <div class="common_form">
+        <div id="j_form" form-baoming>
+            <img src="<%= images('form-bg.png') %>"  alt=""/>
+            <input type="text" class="c1"  data-placeholder="请输入您的姓名">
+            <input type="tel" class="c2"  data-placeholder="请输入您的联系方式" maxlength="11">
+            <button class="btn_submit"></button>
+            <div class="form-close"></div>
+        </div>
+    </div>
+</div>
+<script>
+</script>
+<%- js('jquery.js') %>
+<%- js('index.js') %>
+</body>
+</html>

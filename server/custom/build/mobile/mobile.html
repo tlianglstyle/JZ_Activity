@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>家装爆品嗨购节</title>
+	<%- include(module('metas')) %>
+	<%- include(module('head')) %>
+	<%- css('index.css') %>
+    <script type="text/javascript">
+        smsContent="家装爆品嗨购节";
+        activity="<%= activity %>";
+	</script>
+</head>
+<body>
+<%- include(module('header'),{ type:'AD',index : 1 }) %>
+<div id="content">
+    <div class="activity-modules">
+        <div class="activity-module">
+<img src="<%= images('1.jpg') %>"  alt="极装吉住家装季" />
+<button class="activity-button" style="top:7.23rem;left:3.61rem;width:2.91rem;height:0.78rem;"></button>
+</div>
+<div class="activity-module">
+<img src="<%= images('2.jpg') %>"  alt="极装吉住家装季" />
+<div id="j_form1" form-baoming="1" >
+<input type="text" class="c1" data-placeholder="请输入您的姓名" style="top:3.74rem;left:1.76rem;width:6.53rem;height:0.85rem;" />
+<input type="tel" class="c2" data-placeholder="请输入您的联系方式" maxlength="11" style="top:5.05rem;left:1.73rem;width:6.53rem;height:0.85rem;" />
+<button class="btn_submit" style="top:6.25rem;left:1.74rem;width:6.54rem;height:1.30rem;"></button>
+</div>
+</div>
+<div class="activity-module">
+<img src="<%= images('3.jpg') %>"  alt="极装吉住家装季" />
+<button class="activity-button" style="top:3.39rem;left:0.90rem;width:2.85rem;height:0.72rem;"></button>
+<button class="activity-button" style="top:7.31rem;left:3.56rem;width:2.85rem;height:0.72rem;"></button>
+</div>
+<div class="activity-module">
+<img src="<%= images('4.jpg') %>"  alt="极装吉住家装季" />
+<button class="activity-button" style="top:0.72rem;left:0.91rem;width:2.85rem;height:0.72rem;"></button>
+<button class="activity-button" style="top:4.64rem;left:3.61rem;width:2.85rem;height:0.72rem;"></button>
+</div>
+<div class="activity-module">
+<img src="<%= images('5.jpg') %>"  alt="极装吉住家装季" />
+<button class="activity-button" style="top:5.31rem;left:2.82rem;width:4.31rem;height:0.99rem;"></button>
+</div>
+<img src="<%= images('6.jpg') %>" alt="极装吉住家装季" />
+<div class="activity-module">
+<img src="<%= images('7.jpg') %>"  alt="极装吉住家装季" />
+<button class="activity-button" style="top:8.09rem;left:3.71rem;width:2.29rem;height:0.57rem;"></button>
+<button class="activity-button" style="top:10.60rem;left:3.73rem;width:2.29rem;height:0.57rem;"></button>
+</div>
+<div class="activity-module">
+<img src="<%= images('8.jpg') %>"  alt="极装吉住家装季" />
+<button class="activity-button" style="top:1.56rem;left:3.69rem;width:2.31rem;height:0.55rem;"></button>
+<button class="activity-button" style="top:4.07rem;left:3.73rem;width:2.31rem;height:0.60rem;"></button>
+</div>
+<div class="activity-module">
+<img src="<%= images('9.jpg') %>"  alt="极装吉住家装季" />
+<div id="j_form2" form-baoming="8" >
+<input type="text" class="c1" data-placeholder="请输入您的姓名" style="top:13.53rem;left:3.73rem;width:2.29rem;height:0.57rem;" />
+</div>
+</div>
+<div class="activity-module">
+<img src="<%= images('10.jpg') %>"  alt="极装吉住家装季" />
+<div id="j_form3" form-baoming="9" >
+<input type="text" class="c1" data-placeholder="请输入您的姓名" style="top:14.26rem;left:3.73rem;width:2.29rem;height:0.57rem;" />
+</div>
+</div>
+<img src="<%= images('11.jpg') %>" alt="极装吉住家装季" />
+<div class="activity-module">
+<img src="<%= images('12.jpg') %>"  alt="极装吉住家装季" />
+<button class="activity-button" style="top:2.31rem;left:1.77rem;width:6.56rem;height:1.24rem;"></button>
+</div>
+<img src="<%= images('14.jpg') %>" alt="极装吉住家装季" />
+<div class="activity-module">
+<img src="<%= images('15.jpg') %>"  alt="极装吉住家装季" />
+<div id="j_form4" form-baoming="13" >
+<input type="text" class="c1" data-placeholder="请输入您的姓名" style="top:9.00rem;left:1.76rem;width:6.56rem;height:0.88rem;" />
+<input type="tel" class="c2" data-placeholder="请输入您的联系方式" maxlength="11" style="top:10.30rem;left:1.74rem;width:6.56rem;height:0.88rem;" />
+<button class="btn_submit" style="top:11.51rem;left:1.76rem;width:6.51rem;height:1.29rem;"></button>
+</div>
+</div>
+
+	</div>
+    <div class="common_form">
+        <div id="j_form" form-baoming>
+            <img src="<%= images('form-bg.png') %>"  alt="极装吉住家装季"/>
+            <input type="text" class="c1"  data-placeholder="请输入您的姓名">
+            <input type="tel" class="c2"  data-placeholder="请输入您的联系方式" maxlength="11">
+            <button class="btn_submit"></button>
+            <div class="form-close"></div>
+        </div>
+    </div>
+</div>
+<%- include(module('footer')) %>
+<%- include(module('footer_nav'),{ type:'AD',index : 1 }) %>
+<%- js('index.js') %>
+<script>
+</script>
+</body>
+</html>

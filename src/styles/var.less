@@ -1,0 +1,51 @@
+@screen:1/75rem;
+//common variable-start
+.fl{float:left;}
+.fr{float:right;}
+.clearfix{&:after{clear:both;.block;position:relative;content:'';}}
+.cl{clear:both;}
+.tl{text-align:left;}
+.tr{text-align:right;}
+.tc{text-align:center;}
+.gray{color:#424242 !important;}
+.white{color: #fff !important;}
+.black{color: #000 !important;}
+.inline-block{display:inline-block;}
+.block{display:block;}
+.relative{position:relative;}
+.absolute{position:absolute;}
+.fixed{position:fixed;} 
+.none{display:none;}
+
+.w100{width:100%;box-sizing:border-box;}
+.h100{height:100%;}
+.f12{font-size:12*@screen;}
+.f13{font-size:13*@screen;}
+.f14{font-size:14*@screen;}
+.f15{font-size:15*@screen;}
+.f16{font-size:16*@screen;}
+.f17{font-size:17*@screen;}
+.f18{font-size:18*@screen;}
+.f19{font-size:19*@screen;}
+.f20{font-size:20*@screen;}
+.f21{font-size:21*@screen;}
+.f22{font-size:22*@screen;}
+.f23{font-size:23*@screen;}
+.f24{font-size:24*@screen;}
+.f25{font-size:25*@screen;}
+.f26{font-size:26*@screen;}
+.f27{font-size:27*@screen;}
+.f28{font-size:28*@screen;}
+//common variable-end
+
+//元素缓动
+.transition{-webkit-transition: all 0.5s ease 0s;-moz-transition: all 0.5s ease 0s;-o-transition: all 0.5s ease 0s;transition: all 0.5s ease 0s;}
+
+//元素缓动(自定义时间)
+#transition(@t){-webkit-transition: all (@t*0.1s) ease 0s;-moz-transition: all (@t*0.1s) ease 0s;-o-transition: all (@t*0.1s) ease 0s;transition: all (@t*0.1s) ease 0s;}
+
+//元素尺寸定义
+#size(@width,@height){width:@width*@screen;height:@height*@screen;.block;}
+
+//为按钮添加默认划过样式
+.hover{&:hover{opacity:.7;}}

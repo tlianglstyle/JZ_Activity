@@ -1,0 +1,56 @@
+@import "./base.less";
+
+html{
+  font-family: "Microsoft YaHei","微软雅黑","Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB",Arial,sans-serif;
+  // font-weight: 100;
+}
+h1,h2,h3,h4,h5,h6,th{
+  // font-weight: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight: normal;
+}
+.el-dialog--large{
+  margin-bottom: 0 !important;
+  top: 5% !important;
+}
+.pagination{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  &>div{
+    padding: 0;
+  }
+}
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+.flexrow{
+  display: flex;
+  margin: 0px -@flex-padding;
+  [class*="flex-"] {
+    padding: 0px @flex-padding;
+  }
+}
+.flex{
+  display: flex;
+}
+.flex-1{
+  flex: 1;
+}
+.flex-2{
+  flex: 2;
+}
+.flex-3{
+  flex: 3;
+}
+.flex-4{
+  flex: 4;
+}

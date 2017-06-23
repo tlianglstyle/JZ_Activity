@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>fawefef</title>
+	<%- css('index.css') %>
+    <script type="text/javascript">
+        var title="fawefef";
+        var activity="<%= activity %>";
+	</script>
+</head>
+<body>
+<div id="content">
+    <div class="activity-modules">
+        <div class="activity-module">
+<img src="<%= images('6.jpg') %>"  alt="极装吉住家装季" />
+<div id="j_form1" form-baoming="0" >
+<input type="text" class="c1" data-placeholder="请输入您的姓名" style="top:21.43px;left:585.71px;width:714.29px;height:178.57px;" />
+<input type="text" class="c1" data-placeholder="请输入您的姓名" style="top:217.86px;left:625.00px;width:714.29px;height:178.57px;" />
+</div>
+</div>
+<div class="activity-module">
+<img src="<%= images('3.jpg') %>"  alt="极装吉住家装季" />
+<button class="activity-button" style="top:142.86px;left:407.14px;width:546.43px;height:217.86px;"></button>
+</div>
+
+	</div>
+    <div class="common_form">
+        <div id="j_form" form-baoming>
+            <img src="<%= images('form-bg.png') %>"  alt=""/>
+            <input type="text" class="c1"  data-placeholder="请输入您的姓名">
+            <input type="tel" class="c2"  data-placeholder="请输入您的联系方式" maxlength="11">
+            <button class="btn_submit"></button>
+            <div class="form-close"></div>
+        </div>
+    </div>
+</div>
+<script>
+</script>
+<%- js('jquery.js') %>
+<%- js('index.js') %>
+</body>
+</html>
