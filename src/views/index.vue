@@ -5,7 +5,7 @@ el-row.index-wrapper
   el-col.nav(:span="6", v-show="menuShow")
     el-menu.nav-menu(theme='dark' , :default-active = "defaultItem.id" , :default-openeds="[defaultItem.parentId]" ,:router="true")
       .header-logo
-        h2 JZ_Web
+        h2 JZ_Activity
       template(v-for="(item, index) in menuItems")
         el-menu-item( v-if="!item.children", :index="item.id" , :route="{name: item.name}") {{item.text}}
         el-submenu(:index="item.id" v-else)

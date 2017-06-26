@@ -1,7 +1,8 @@
 <template lang="pug">
 div
     el-button(type="primary" @click="add()") 创建活动
-    el-button(type="primary" @click="upload()") 上传活动压缩包
+    el-button(type="primary" @click="upload()") 上线代码
+    el-button(type="primary") 活动模板
     el-dialog.editor-dialog(title="上传", v-model="addDialog", size="full" v-if="addDialog")
       add(:data="addData" @openEditActivity="edit" @close="closeAdd" @cancel="addDialog = false" v-loading="saveLoading" v-on:reload="reload")
     el-dialog.editor-dialog(title="编辑活动"  v-model="editActivityDialog"  size="full" v-if="editActivityDialog")
@@ -17,7 +18,7 @@ import upload from './upload'
 import Vue from 'vue'
 export default {
   created () {
-   return;
+   //return;
     this.edit({type:"1",title:""},[{name:'4.jpg',
       width:100,height:100,left:0,top:0,areaList:[]
     }]);

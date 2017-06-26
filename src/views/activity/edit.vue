@@ -14,7 +14,7 @@
                   <el-col :xs="24" :sm="12">
                     <el-form-item :label="group.name" label-width="70px" class = "custom-form-item">
                       <el-button-group>
-                        <el-button v-for="areaType in group.data" type="primary" size="small" v-on:click="add(item,areaType)" :icon="areaType.icon">{{areaType.text}}</el-button>
+                        <el-button v-for="areaType in group.data" type="primary" size="mini" v-on:click="add(item,areaType)" :icon="areaType.icon">{{areaType.text}}</el-button>
                       </el-button-group>
                     </el-form-item>
                   </el-col>
@@ -132,7 +132,17 @@ export default {
       currentChangeArea : null,//补充未快速响应的移动事件
       areaTypeList :[
         {
+          name:'组件库',
+          type:2,
+          data:[
+            { key : 'slider-zhucai' , icon : 'menu' , text : '主材轮播',width:300,height:200},
+            { key : 'slider-fangan' , icon : 'menu' , text : '整装方案轮播',width:300,height:200},
+            { key : 'slider-ybj' , icon : 'menu' , text : '样板间轮播',width:300,height:200}
+          ]
+        },
+        {
           name:'热区元素',
+          type:3,
           data:[
             { key : 'open-form' , icon : 'view' , text : '弹出表单',width:100,height:50},
             { key : 'open-link' , icon : 'view' , text : '超链接',width:200,height:50}
@@ -140,6 +150,7 @@ export default {
         },
         {
           name:'表单录入',
+          type:3,
           data:[
             { key : 'input-name' , icon : 'edit' , text : '姓名',width:200,height:50},
             { key : 'input-telephone' , icon : 'edit' , text : '电话',width:200,height:50},
