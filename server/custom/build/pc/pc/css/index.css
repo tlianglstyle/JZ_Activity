@@ -39,8 +39,9 @@
     top: 45%;
     width: 78%;
     left: 9.4%;
-    height: 19%;
-    background: none;
+    height: 19%;    
+    filter: alpha(opacity=0);
+    opacity: 0;
     border: none;
     border-radius: 0.7rem;
 }
@@ -85,8 +86,9 @@
 	left: 14%;
 	width: 73%;
 	height: 14%;
-	border:none;
-	background:none;
+	border:none;    
+	filter: alpha(opacity=0);
+	opacity: 0;
 }
 .common_form [form-baoming] .form-close{
 	position:absolute;
